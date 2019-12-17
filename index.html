@@ -17,6 +17,13 @@
 
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
+  
+  <!-- slider -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  
+  
   <style>
     .imagen{
       display: inline-block;
@@ -88,6 +95,18 @@
         próximo ingeniero</p>
 
     </div>
+    
+       <div id="slide-wrap">
+        <section class="slider">
+          <ul class="slider1">
+            <li><img src="img/slider/slider1.jpg" alt=""></li>
+            <li><img src="img/slider/slider2.jpg" alt=""></li>
+            <li><img src="img/slider/slider3.jpg" alt=""></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  
   </header>
   
    <!-- About Section -->
@@ -574,6 +593,20 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
+      
+        <script>
+    $(document).ready(function(){
+      $('.slider1').bxSlider({
+        mode: 'fade',
+      });
+      $('.slider2').bxSlider({
+        mode: 'fade',
+      });
+      $('.slider3').bxSlider({
+        mode: 'fade',
+      });
+    });
+  </script>
 
 </body>
 
